@@ -8,12 +8,14 @@ import {MenubarModule} from 'primeng/menubar';
 
 
 
+
 @NgModule({
  
   exports: [
     CardModule,
     ButtonModule,
-    MenubarModule
+    MenubarModule,
+    
 
   ]
 })
