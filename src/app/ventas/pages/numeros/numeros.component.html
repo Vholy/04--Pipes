@@ -1,1 +1,94 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <h1>DecimalPipe y Porcentaje</h1>
+    <p>
+        Pipes incluidos en Angular - Usualmente en el Common Module
+    </p>
+
+</div>
+
+<div class="grid">
+
+    <div class="col-2">
+        <p-card header="| number" subheader="var = ventasNetas">
+        <h3>Codigo </h3>
+        <ul>
+            <li>ventasNetas | number </li>
+            <li>ventasNetas | number:'1.1-1'</li>
+            <li>ventasNetas | number:'1.2-2' </li>
+            <li>ventasNetas | number:'1.4-6'</li>
+        </ul>
+        
+        </p-card>
+
+    </div>
+    <div class="col-2">
+        <p-card header="| number "subheader= 'var = {{ventasNetas}}'>
+        <h3>Ejecucion </h3> 
+        <ul>
+            <li>{{ventasNetas | number}}</li>
+            <li>{{ventasNetas | number:'1.1-1'}}</li>
+            <li>{{ventasNetas | number:'1.2-2'}}</li>
+            <li>{{ventasNetas | number:'1.4-6'}}</li>
+            
+        </ul>   
+        </p-card>
+
+    </div>
+
+    <div class="col-4">
+        <p-card header="| currency" subheader="var = ventasNetas">
+        <h3>Codigo</h3>
+        <ul>
+            <li>ventasNetas | currency </li>
+            <li>ventasNetas | currency :'AR$' </li>
+            <li>ventasNetas | currency :'AR$':'symbol-narrow' </li>
+            <li>ventasNetas | currency :'AR$':'symbol-narrow':'1.4-4' </li>
+        </ul>
+        
+        </p-card>
+
+    </div>
+    <div class="col-4">
+        <p-card header="| currency "subheader= 'var = {{ventasNetas}}'>
+        <h3>Ejecucion </h3> 
+        <ul>
+            <li>{{ventasNetas | currency}}</li>
+            <li>{{ventasNetas | currency :'AR$'}}</li>
+            <li>{{ventasNetas | currency :'USD':'symbol-narrow'}} </li>
+            <li>{{ventasNetas | currency :'USD':'symbol-narrow':'1.4-4'}} </li>
+            
+        </ul>   
+        </p-card>
+
+    </div>
+    <div class="col-6">
+        <p-card header="| percent" subheader="var = porcentaje">
+        <h3>Codigo </h3>
+        <ul>
+            <li>porcentaje | percent </li>
+            <li>porcentaje | percent: '2.1-1' </li>
+            <li>porcentaje | percent: '2.2-2' </li>
+            <li>porcentaje | percent: '2.2-6' </li>
+
+        </ul>
+        
+        </p-card>
+
+    </div>
+    <div class="col-6">
+        <p-card header="| percent "subheader= 'var = {{porcentaje}}'>
+        <h3>Ejecucion </h3> 
+        <ul>
+            <li>{{porcentaje | percent}}</li>
+            <li>{{porcentaje | percent: '2.1-1'}}</li>
+            <li>{{porcentaje | percent: '2.2-2'}}</li>
+            <li>{{porcentaje | percent: '2.2-6'}}</li>
+
+            
+        </ul>   
+        </p-card>
+
+    </div>
+
+   
+</div>
